@@ -1,0 +1,6 @@
+const passwordBtnEl = document.querySelector('button') //Seleciona uma tag
+
+passwordBtnEl.addEventListener('click', () => { //Adiciona um evento de clique
+    const randomPassword = nanoid()
+    displayPasswordEl.innerHTML = randomPassword //Apos o evento de clique a senha segura aparacera no lugar do h2
+})
